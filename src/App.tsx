@@ -2,7 +2,7 @@
 import Logo from './components/Logo';
 import RegistrationForm from './components/RegistrationForm';
 import SocialLinks from './components/SocialLinks';
-import * as backgroundImage from 'https://ibb.co/qjjLC4Z';
+
 
 function App() {
 

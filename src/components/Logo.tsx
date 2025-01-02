@@ -1,6 +1,6 @@
 
 
-import logo from '/Public/logo.png' ;
+import logo from '../Logo.png' ;
 
 const Logo = () => {
   return (
