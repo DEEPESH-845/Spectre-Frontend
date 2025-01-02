@@ -1,12 +1,12 @@
 // Main registration form component
-import React from 'react';
+import React, { useState } from 'react';
 import { Phone, Mail } from 'lucide-react';
-import FormInput from './FormInput';
-import PasswordInput from './PasswordInput';
+import FormInput from '../components/form/FormInput';
+import PasswordInput from '../components/form/PasswordInput';
 
 const RegistrationForm = () => {
   // Form state management
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     phone: '',
@@ -29,10 +29,10 @@ const RegistrationForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md px-4 md:px-0">
       {/* Form Header */}
-      <h2 className="text-3xl font-bold text-white mb-2">Create new account.</h2>
-      <p className="text-gray-400 mb-6">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Create new account.</h2>
+      <p className="text-gray-400 mb-6 text-sm md:text-base">
         Already have an account?{' '}
         <a href="#" className="text-blue-400 hover:text-blue-300">
           Log in.
@@ -40,7 +40,7 @@ const RegistrationForm = () => {
       </p>
 
       {/* Name Fields */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <FormInput
           type="text"
           name="firstName"
@@ -85,7 +85,7 @@ const RegistrationForm = () => {
       <button
         type="submit"
         className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold 
-          py-2 px-4 rounded-lg transition-colors"
+          py-3 px-4 rounded-lg transition-colors text-sm md:text-base"
       >
         Sign up
       </button>
