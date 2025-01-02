@@ -25,15 +25,15 @@ const RegistrationForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
-      <h2 className="text-3xl font-bold text-white mb-2">Create new account.</h2>
-      <p className="text-gray-400 mb-6">
+     <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Create new account.</h2>
+     <p className="text-gray-400 mb-6 text-sm md:text-base">
         Already have an account?{' '}
         <a href="#" className="text-blue-400 hover:text-blue-300">
           Log in.
         </a>
       </p>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <input
             type="text"
@@ -100,7 +100,8 @@ const RegistrationForm = () => {
 
       <button
         type="submit"
-        className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+        className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold 
+          py-3 px-4 rounded-lg transition-colors text-sm md:text-base"
       >
         Sign up
       </button>
